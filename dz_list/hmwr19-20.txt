@@ -1,0 +1,12 @@
+
+1. Створити Header, Footer
+2. Між Header i Footer створити <Outlet/> в якому будуть виводитись наступні компоненти:
+   (Дані беріть з https://jsonplaceholder.typicode.com/ (буде + якщо зробите через fetch))
+   - Users
+   - Posts
+   - Comments
+3. Створіть компоненти:
+   - SingleUser
+   - SinglePost
+   - SingleComment
+4. При кліку на конкретний елкмент, повинні виводитись деталі даного елемента (використовуємо роутінг)

@@ -1,0 +1,67 @@
+$color_red: red !important;
+$black: black;
+$silver: silver;
+$mr-15: 15px;
+
+$s-bt: space-between;
+$s-ar: space-around;
+
+
+
+@mixin flx($js, $al: start) {
+    display: flex;
+
+
+    @if $js ==  $s-bt {
+        justify-content: $js
+    }
+
+    @if $js ==  $s-ar {
+        justify-content: $js
+    }
+    //
+
+    @if $al == $s-ar {
+        align-items: $al;
+    }
+
+    @if $al == $s-bt {
+        align-items: $s-bt;
+    }
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    div, p {
+        color: $color_red;
+
+        span {
+            padding: $mr-15;
+            background-color: $black;
+        }
+    }
+}
+
+.wrapper {
+    background-color: $silver;
+    height: 100vh;
+    // color: ;
+}
+
+.wrapper2 {
+    @include flx(space-around, $s-bt);
+
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: center
+
+// .wrapper2_head // wrapper2_head
+    &_head {
+        background-color: yellow;
+        height: 50px;
+        width: 50px;
+    }
+};
